@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Cotizar Criptomonedas</title>
+    
+</head>
+<body>
+    <section class="title-container">
+        <h1 class="title">Conversor de criptomonedas</h1>
+    </section>
+    <div class="container">
+        <div class="row">
+            
+            <div class="one-half column">
+                <form id="formulario">
+                    <div class="row">
+                        <label>Elige tu moneda</label>
+                        <select
+                            class="u-full-width"
+                            id="moneda"
+                            name="moneda"
+                        >
+                                <option hidden value="">Elige tu moneda</option>
+                                <option value="USD">Dolar Estadounidense</option>
+                                <option value="MXN">Peso Mexicano</option>
+                                <option value="GBP">Libras</option>
+                                <option value="EUR">Euros</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                    <div>
+                        <label>Elige tu criptomoneda</label>
+                        <select 
+                            class="u-full-width"
+                            id="criptomonedas"
+                            name="criptomoneda"
+                        >
+                            <option  disabled selected value="">Elige tu criptomoneda</option>
+                        </select>
+                    </div>
+                    </div>
+                    <input class="button-primary u-full-width" type="submit" value="Cotizar" />
+
+                    <div id="resultado" class="resultado"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
